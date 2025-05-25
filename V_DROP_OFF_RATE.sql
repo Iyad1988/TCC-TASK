@@ -16,7 +16,7 @@
 t1.shop_id, t1.locale, t1.booking_date, (order_intake - total_revenue)/order_intake as drop_off_rate \
 \
     from KPI_report.v_order_intake as t1\
-    join KPI_report.revenue  as t2\
+    join KPI_report.v_revenue  as t2\
     on t1.shop_id = t2.shop_id \
     and t1.booking_date = t2.booking_date  \
     and  t1.locale = t2.locale);}
